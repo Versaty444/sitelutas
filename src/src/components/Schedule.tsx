@@ -60,13 +60,13 @@ function App() {
   };
 
   return (
-    <div id="schedule" className="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
+    <div id="schedule" className="py-6 px-4 sm:px-6 lg:px-8 bg-gray-50 mb-12">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Quadro de Horários
           </h1>
-          <div className="flex flex-wrap gap-3 justify-center mb-8">
+          <div className="flex flex-wrap gap-3 justify-center mb-6">
             <button
               onClick={() => setSelectedClass(null)}
               className={`flex items-center gap-2 px-4 py-2 rounded-lg shadow-sm transition-all duration-200 ${
@@ -103,14 +103,14 @@ function App() {
               <table className="min-w-full divide-y divide-gray-300">
                 <thead className="bg-gray-50">
                   <tr>
-                    <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
+                    <th scope="col" className="py-3 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
                       <div className="flex items-center gap-2">
                         <Clock size={20} className="text-gray-500" />
                         Horário
                       </div>
                     </th>
                     {DAYS.map((day) => (
-                      <th key={day} scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      <th key={day} scope="col" className="px-3 py-3 text-left text-sm font-semibold text-gray-900">
                         <div className="flex items-center gap-2">
                           <Calendar size={20} className="text-gray-500" />
                           {day}
@@ -122,13 +122,13 @@ function App() {
                 <tbody className="divide-y divide-gray-200 bg-white">
                   {HOURS.map((time) => (
                     <tr key={time}>
-                      <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                      <td className="whitespace-nowrap py-3 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
                         {time}
                       </td>
                       {DAYS.map((day) => {
                         const className = getClassForTimeSlot(day, time);
                         return (
-                          <td key={`${day}-${time}`} className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                          <td key={`${day}-${time}`} className="whitespace-nowrap px-3 py-3 text-sm text-gray-500">
                             {className && (
                               <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${getClassColor(className)} bg-opacity-10 text-gray-900`}>
                                 {className}
