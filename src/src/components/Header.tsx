@@ -51,31 +51,31 @@ const Header = () => {
             </a>
             <a
               onClick={() => scrollToSection('about')}
-              className="hover:text-red-600 transition-colors"
+              className="hover:text-red-600 transition-colors cursor-pointer"
             >
               Sobre Nós
             </a>
             <a
               onClick={() => scrollToSection('martial-arts')}
-              className="hover:text-red-600 transition-colors"
+              className="hover:text-red-600 transition-colors cursor-pointer"
             >
               Artes Marciais
             </a>
             <a
               onClick={() => scrollToSection('schedule')}
-              className="hover:text-red-600 transition-colors"
+              className="hover:text-red-600 transition-colors cursor-pointer"
             >
               Horários
             </a>
             <a
               onClick={() => scrollToSection('pricing')}
-              className="hover:text-red-600 transition-colors"
+              className="hover:text-red-600 transition-colors cursor-pointer"
             >
               Preços
             </a>
             <a
               onClick={() => scrollToSection('contact')}
-              className="hover:text-red-600 transition-colors"
+              className="hover:text-red-600 transition-colors cursor-pointer"
             >
               Contato
             </a>
