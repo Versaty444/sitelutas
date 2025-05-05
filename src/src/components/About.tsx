@@ -20,7 +20,7 @@ const About = () => {
               Fundador do Espaço de Lutas Tiradentes, criei esse projeto com o propósito de transformar vidas por meio das artes marciais. Aqui, oferecemos um ambiente seguro, acolhedor e motivador, onde qualquer pessoa — independentemente da idade, gênero ou condição física — pode treinar, evoluir e conquistar seus objetivos.
 
               Seja para competir, melhorar a saúde ou apenas se desafiar, aqui é o seu lugar.
-              Venha fazer parte dessa família que cresce a cada dia!
+              Venha fazer parte dessa família que cresce a cada dia!
             </p>
             <p className="text-lg">
               Com instrutores certificados e experientes, oferecemos treinamento de alta qualidade em Muay Thai, Boxe e Jiu-Jitsu, adaptando as aulas às necessidades individuais de cada praticante.
