@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Dumbbell, Users, Brain, Shield } from 'lucide-react';
+import { Brain, Shield } from 'lucide-react';
 
 const MartialArts = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
